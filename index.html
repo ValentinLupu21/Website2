@@ -23,7 +23,7 @@
             <li id="link2" class="link"><a href="#preturi">Preturi</a></li>
             <li id="link3" class="link"><a href="#despre">Despre</a></li>
             </ul>
-            <button class="btn">Angajeaza-ma</button>
+            <button class="btn btn-open">Login</button>
 
 
     </nav>
@@ -49,6 +49,39 @@
         </div>
 
     </header>
+
+    <section class="modal hidden">
+        <div class="wrapper">
+            <button class="closebtn btn-close"><i class="ri-close-line"></i></button>
+                <form action="">
+                    
+                    <h2>Login</h2>
+                    <div class="input-box">
+                        <i class="ri-user-line"></i><input type="text" placeholder="Nume utilizator" required autofocus oninvalid="this.setCustomValidity('Introduceti-va utilizatorul')"
+                        oninput="setCustomValidity('')">
+                        </div>
+
+                    <div class="input-box">
+                        <i class="ri-lock-line"></i><input type="password" placeholder="Parola" required autofocus oninvalid="this.setCustomValidity('Introduceti-va parola')"
+                        oninput="setCustomValidity('')">
+                        </div>
+
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Tine-ma minte</label>
+                        <a href="#parola">Ti-ai uitat parola?</a>
+                    </div>
+
+                    <button type="submit" class="btn">Autentifica-te</button>
+
+                    <div class="register-link">
+                        <p>Nu detii inca un cont?</p><a href="#">Inregistreaza-te</a>
+                    </div>
+                </form>
+        </div>
+
+        <div class="overlay hidden"></div>
+    </section>
+
 
     <section class="container">
         <h2 class="header">Beneficiile noastre</h2>
